@@ -1,0 +1,38 @@
+body {
+  background-color: #dcaf54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Intro Rust G Base 2 Line";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "Intro Head R Base";
+  src: url("fonts/IntroHeadR-Base.woff2") format("woff2"),
+    url("fonts/IntroHeadR-Base.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intro Rust G Base 2 Line";
+  src: url("fonts/IntroRustG-Base2Line.woff2") format("woff2"),
+    url("fonts/IntroRustG-Base2Line.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
