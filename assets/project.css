@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3e0da;
+}
+
+.row1,
+.row2 {
+  display: flex; /* this makes block elements go inline */
+  /* flex-wrap: wrap; */
+  margin: 40px 40px;
+}
+
+/* this class is given to div within column so we can actually see the elements in columns */
+.picture1,
+.picture2 {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  left: 158px;
+  overflow: hidden;
+}
+
+.picture1 {
+  border: #eb5757 solid 10px;
+}
+
+.picture2 {
+  border: #3a3335 solid 10px;
+}
+
+.col-1 {
+  width: calc(100% / 12 * 6);
+  height: 100%;
+}
+
+.col-2 {
+  display: flex;
+  width: calc(100% / 12 * 6);
+  position: relative;
+  justify-content: center;
+}
+
+.col-2 p {
+  position: absolute;
+  top: 50%;
+  padding: 0 100px;
+}
+.row1 h1 {
+  position: absolute;
+  top: 30%;
+  color: #eb5757;
+}
+
+.row2 h1 {
+  position: absolute;
+  top: 30%;
+  color: #3a3335;
+}
+
+.line1 {
+  border-left: 2px solid #eb5757;
+}
+
+.line2 {
+  border-left: 2px solid #3a3335;
+}
+
+#movies {
+  height: 100%;
+  position: relative;
+  right: 80px;
+}
+
+#memory {
+  height: 100%;
+  position: relative;
+}
