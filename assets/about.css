@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3e0da;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 100px;
+}
+
+.navitem {
+  color: black;
+  text-decoration: none;
+}
+
+.navitem:hover {
+  color: white;
+}
+
+.navitem + .navitem {
+  margin-left: 80px;
+}

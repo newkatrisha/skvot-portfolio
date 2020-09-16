@@ -6,6 +6,27 @@ body {
   background-color: #f3e0da;
 }
 
+.navbar {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 100px;
+}
+
+.navitem {
+  color: black;
+  text-decoration: none;
+}
+
+.navitem:hover {
+  color: white;
+}
+
+.navitem + .navitem {
+  margin-left: 80px;
+}
+
 .row1,
 .row2 {
   display: flex; /* this makes block elements go inline */
@@ -18,8 +39,7 @@ body {
 .picture2 {
   height: 350px;
   width: 350px;
-  position: relative;
-  left: 158px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
