@@ -1,0 +1,133 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 20px;
+}
+
+header {
+  text-align: end;
+  background-color: #f3e0da;
+  margin: -20px;
+}
+
+nav {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Code Demo";
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+.col-1 {
+  width: calc(100% / 12 * 6);
+  height: 100%;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 6);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  padding: 0 100px;
+  color: #eb5757;
+  font-family: "Code Demo";
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.row-1 {
+  height: calc(100% / 12 * 2);
+}
+
+.row-1 h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Baron Neue";
+  font-style: normal;
+}
+
+.row-2 {
+  height: calc(100% / 12 * 10);
+}
+
+.tag {
+  color: #eb5757;
+}
+
+#heart {
+  height: 50px;
+  float: left;
+  position: relative;
+  bottom: 15px;
+}
+
+@font-face {
+  font-family: "GUERRILLA Normal";
+  src: url("fonts/GUERRILLA-Normal.woff2") format("woff2"),
+    url("fonts/GUERRILLA-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/BaronNeueBlack.woff2") format("woff2"),
+    url("fonts/BaronNeueBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/BaronNeue.woff2") format("woff2"),
+    url("fonts/BaronNeue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Code Demo";
+  src: url("fonts/CodeDemo-Light.woff2") format("woff2"),
+    url("fonts/CodeDemo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Code Demo";
+  src: url("fonts/CodeDemo-Bold.woff2") format("woff2"),
+    url("fonts/CodeDemo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

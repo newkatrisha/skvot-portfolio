@@ -6,6 +6,42 @@ body {
   background-color: #f3e0da;
 }
 
+header {
+  text-align: end;
+  background-color: #f3e0da;
+  margin: -20px;
+}
+
+nav {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Code Demo";
+  font-weight: bold;
+}
+
+.navitem:hover {
+  color: white;
+}
+
+#heart {
+  height: 50px;
+  width: auto;
+  float: left;
+  position: relative;
+  bottom: 15px;
+}
+
 .content {
   display: flex;
   position: relative;
@@ -13,23 +49,11 @@ body {
   align-items: center;
 }
 
-.navbar {
-  display: flex;
-  list-style-type: none;
-  position: relative;
-  justify-content: flex-end;
-  margin: 20px 100px;
-}
-
-.navitem {
-  color: black;
-  text-decoration: none;
-}
-
-.navitem:hover {
-  color: white;
-}
-
-.navitem + .navitem {
-  margin-left: 80px;
+@font-face {
+  font-family: "Code Demo";
+  src: url("fonts/CodeDemo-Bold.woff2") format("woff2"),
+    url("fonts/CodeDemo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
