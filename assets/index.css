@@ -4,14 +4,29 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
+html,
 body {
-  margin: 0px 20px;
+  height: 100%;
+  margin: 0;
 }
 
 header {
   text-align: end;
   background-color: #f3e0da;
   margin: -20px;
+  height: 100px;
+}
+
+footer {
+  background-color: #f3e0da;
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  width: 100%;
 }
 
 nav {
@@ -23,6 +38,40 @@ li {
   display: inline;
   padding: 20px;
   margin: 20px 20px;
+  vertical-align: middle;
+}
+
+li:first-child {
+  /* float: left; */
+  padding: 0;
+  margin: 0;
+  margin-right: 800px;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+@media screen and (max-width: 560px) {
+  li {
+    position: relative;
+    left: 400px;
+    display: inline;
+    padding: 0;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
 }
 
 li a {
@@ -32,13 +81,33 @@ li a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 560px) {
+  li a {
+    display: none;
+  }
+}
+
 a:hover {
   color: white;
 }
 
 .content {
+  min-height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main {
+  /* overflow: auto; */
   display: flex;
-  padding: 20px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 765px) {
+  .content {
+    display: block;
+    padding: 0px;
+  }
 }
 
 .col-1 {
@@ -46,46 +115,76 @@ a:hover {
   height: 100%;
 }
 
+@media screen and (max-width: 765px) {
+  .col-1 {
+    width: 100%;
+  }
+}
+
 .col-2 {
   width: calc(100% / 12 * 6);
 }
 
+@media screen and (max-width: 765px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
 .text {
-  position: absolute;
-  top: 50%;
+  margin-top: 50%;
   padding: 0 100px;
   color: #eb5757;
   font-family: "Code Demo";
-  font-size: x-large;
+  font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.5;
 }
+
+/* @media screen and (max-width: 765px) {
+  .text {
+    
+  }
+} */
 
 .row-1 {
   height: calc(100% / 12 * 2);
 }
 
 .row-1 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 100px;
+  margin-bottom: 0;
   font-family: "Baron Neue";
   font-style: normal;
+  font-size: 3rem;
 }
 
 .row-2 {
   height: calc(100% / 12 * 10);
 }
 
+.row {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
 .tag {
   color: #eb5757;
 }
 
+#coder {
+  min-width: 300px;
+}
+
 #heart {
   height: 50px;
-  float: left;
-  position: relative;
-  bottom: 15px;
 }
+
+/* #in {
+  padding-top: 20px;
+} */
 
 @font-face {
   font-family: "GUERRILLA Normal";

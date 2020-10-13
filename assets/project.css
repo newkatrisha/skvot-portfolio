@@ -62,12 +62,11 @@ li a {
   width: 350px;
   margin: 0 auto;
   overflow: hidden;
-  transition: width 1s ease, height 1s;
+  transition: transform 1s ease-in-out;
 }
 
 .picture:hover {
-  width: 400px;
-  height: 400px;
+  transform: scale(1.1);
 }
 
 .picture1 {
