@@ -43,10 +43,35 @@ li a {
 }
 
 .content {
+  text-align: center;
+}
+
+.main {
   display: flex;
-  position: relative;
+  margin: 60px;
+}
+
+.col-1 {
+  width: calc(100% / 12 * 6);
+}
+
+.contact {
+  display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 6);
+}
+
+.about {
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: large;
+}
+
+.about p {
+  margin-top: 40px;
 }
 
 @font-face {
